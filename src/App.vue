@@ -16,6 +16,10 @@
       </v-list-item>
     </v-list>
 
+    <v-btn>
+      <v-icon>mdi-magnify</v-icon>
+    </v-btn>
+
 
 
     </v-app-bar>
