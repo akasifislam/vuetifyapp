@@ -9,6 +9,15 @@
     <v-toolbar-title>
       Vuetify App
     </v-toolbar-title>
+
+    <v-list>
+      <v-list-item>
+        <v-list-item-title>Home</v-list-item-title>
+      </v-list-item>
+    </v-list>
+
+
+
     </v-app-bar>
     
 
@@ -19,14 +28,11 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld';
-
 export default {
   name: 'App',
-
   components: {
   //  
   },
-
   data: () => ({
     //
   }),
