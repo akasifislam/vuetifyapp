@@ -9,10 +9,10 @@
     <v-toolbar-title>
       Vuetify App
     </v-toolbar-title>
-
-    <v-list>
-      <v-list-item>
-        <v-list-item-title>Home</v-list-item-title>
+    <v-spacer />
+    <v-list class="d-flex align-center">
+      <v-list-item link v-for="(menu,index) in menus" :key="index" :to="menu.route">
+        <v-list-item-title> {{ menu.title }} </v-list-item-title>
       </v-list-item>
     </v-list>
 
@@ -30,11 +30,16 @@
 // import HelloWorld from './components/HelloWorld';
 export default {
   name: 'App',
-  components: {
-  //  
-  },
-  data: () => ({
-    //
-  }),
+  data() {
+    return {
+      menus: [
+        {title:'Home' ,   route:'home'},
+        {title:'Profile', route:'profile'},
+        {title:'Project', route:'project'},
+        {title:'Service', route:'service'},
+        {title:'Contact', route:'contact'},
+      ]
+    }
+  }
 };
 </script>
