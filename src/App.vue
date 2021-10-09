@@ -1,29 +1,7 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="white"
-      light
-      elovation="6"
-    >
-    <v-toolbar-title>
-      Vuetify App
-    </v-toolbar-title>
-    <v-spacer />
-    <v-list class="d-flex align-center">
-      <v-list-item link v-for="(menu,index) in menus" :key="index" :to="menu.route">
-        <v-list-item-title> {{ menu.title }} </v-list-item-title>
-      </v-list-item>
-    </v-list>
-
-    <v-btn>
-      <v-icon>mdi-magnify</v-icon>
-    </v-btn>
-
-
-
-    </v-app-bar>
     
+     <Header /> 
 
     <v-main>
     </v-main>
@@ -32,8 +10,12 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld';
+import Header from './components/Header.vue';
 export default {
   name: 'App',
+  components: {
+    Header
+  },
   data() {
     return {
       menus: [
