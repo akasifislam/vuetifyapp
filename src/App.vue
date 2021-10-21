@@ -6,11 +6,14 @@
     <v-main>
         <!-- Hero section  -->
         <HeroComponent />
+        <!-- About us  -->
+        <Aboutus />
     </v-main>
   </v-app>
 </template>
 
 <script>
+import Aboutus from './components/Aboutus.vue';
 // import HelloWorld from './components/HelloWorld';
 import Header from './components/Header.vue';
 import HeroComponent from './components/HeroComponent.vue';
@@ -18,7 +21,8 @@ export default {
   name: 'App',
   components: {
     Header,
-    HeroComponent
+    HeroComponent,
+    Aboutus
   },
   data() {
     return {
