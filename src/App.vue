@@ -9,7 +9,7 @@
         <!-- About us  -->
         <Aboutus />
         <!-- Protfolio -->
-        <Protfolio/>
+        <Protfolio />
     </v-main>
   </v-app>
 </template>
