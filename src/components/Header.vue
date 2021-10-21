@@ -4,9 +4,10 @@
       color="white"
       light
       elovation="6"
+      elevate-on-scroll
     >
     <v-toolbar-title>
-      Vuetify App
+      Web Burdens
     </v-toolbar-title>
     <v-spacer />
     <v-list class="d-flex align-center">
@@ -42,3 +43,11 @@ export default {
   }
 };
 </script>
+<style>
+  .v-toolbar__title {
+    font-size: 32px;
+    color: rgba(230, 59, 59, 0.808);
+    font-family: cursive;
+    font-weight: 700;
+    }
+</style>
