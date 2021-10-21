@@ -4,6 +4,8 @@
      <Header /> 
 
     <v-main>
+        <!-- Hero section  -->
+        <HeroComponent />
     </v-main>
   </v-app>
 </template>
@@ -11,10 +13,12 @@
 <script>
 // import HelloWorld from './components/HelloWorld';
 import Header from './components/Header.vue';
+import HeroComponent from './components/HeroComponent.vue';
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    HeroComponent
   },
   data() {
     return {
