@@ -8,6 +8,8 @@
         <HeroComponent />
         <!-- About us  -->
         <Aboutus />
+        <!-- Protfolio -->
+        <Protfolio/>
     </v-main>
   </v-app>
 </template>
@@ -17,12 +19,14 @@ import Aboutus from './components/Aboutus.vue';
 // import HelloWorld from './components/HelloWorld';
 import Header from './components/Header.vue';
 import HeroComponent from './components/HeroComponent.vue';
+import Protfolio from './components/Protfolio.vue';
 export default {
   name: 'App',
   components: {
     Header,
     HeroComponent,
-    Aboutus
+    Aboutus,
+    Protfolio
   },
   data() {
     return {
