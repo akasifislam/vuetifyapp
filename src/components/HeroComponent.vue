@@ -1,11 +1,11 @@
 <template>
-    <v-container>
+    <v-container class="pt-15">
         <v-row>
             <v-col lg="6">
-                <h2>Welcome to Our Vuetify App</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum necessitatibus repudiandae porro atque praesentium assumenda nulla earum sit quibusdam cupiditate?
+                <h2 class="intro-text">Welcome to Our Vuetify App</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum necessitatibus repudiandae porro atque praesentium assumenda nulla earum sit quibusdam cupiditate?
                 </p>
-                <v-btn color="success" class="white--text" rounded>Get Started</v-btn>
+                <v-btn color="success" class="white--text mr-10" rounded>Get Started</v-btn>
                 <v-btn color="indigo" class="white--text" rounded>
                     <v-icon>mdi-play-circle</v-icon>
                     Watch video
@@ -25,5 +25,16 @@ export default {
 </script>
 
 <style>
-
+    h2.intro-text {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: cursive;
+    color: #444;
+    }
+    p.description {
+    font-size: 19px;
+    font-family: cursive;
+    margin: 32px 0px;
+    color: #313030ba;
+    }
 </style>
