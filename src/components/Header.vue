@@ -7,7 +7,7 @@
       elevate-on-scroll
     >
     <v-toolbar-title>
-      Web Burdens
+      Web Wild
     </v-toolbar-title>
     <v-spacer />
     <v-list class="d-flex align-center">
