@@ -6,14 +6,22 @@
     <v-main>
         <!-- Hero section  -->
         <HeroComponent />
+
         <!-- About us  -->
         <Aboutus />
+
         <!-- Protfolio -->
         <Protfolio />
+
         <!-- Project  -->
         <Project />
+
         <!-- Gallery  -->
         <Gallery />
+
+        <!-- contactus  -->
+        <Contactus />
+
 
         
     </v-main>
@@ -22,6 +30,7 @@
 
 <script>
 import Aboutus from './components/Aboutus.vue';
+import Contactus from './components/Contactus.vue';
 import Gallery from './components/Gallery.vue';
 // import HelloWorld from './components/HelloWorld';
 import Header from './components/Header.vue';
@@ -36,7 +45,8 @@ export default {
     Aboutus,
     Protfolio,
     Project,
-    Gallery
+    Gallery,
+    Contactus
   },
   data() {
     return {
