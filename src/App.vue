@@ -12,12 +12,17 @@
         <Protfolio />
         <!-- Project  -->
         <Project />
+        <!-- Gallery  -->
+        <Gallery />
+
+        
     </v-main>
   </v-app>
 </template>
 
 <script>
 import Aboutus from './components/Aboutus.vue';
+import Gallery from './components/Gallery.vue';
 // import HelloWorld from './components/HelloWorld';
 import Header from './components/Header.vue';
 import HeroComponent from './components/HeroComponent.vue';
@@ -30,7 +35,8 @@ export default {
     HeroComponent,
     Aboutus,
     Protfolio,
-    Project
+    Project,
+    Gallery
   },
   data() {
     return {
