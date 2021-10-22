@@ -6,10 +6,10 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ut dolore laudantium nulla eveniet alias minus explicabo ea labore vitae quod cupiditate et doloremque repellat quam, iure expedita consequatur quo</p>
           </v-col>
           <v-col
-            v-for="n in 9"
+            v-for="n in 36"
             :key="n"
             class="d-flex child-flex"
-            cols="4"
+            cols="2"
         >
         <v-img
             :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
