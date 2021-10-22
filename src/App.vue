@@ -36,8 +36,9 @@ export default {
     return {
       menus: [
         {title:'Home' ,   route:'home'},
-        {title:'Profile', route:'profile'},
+        {title:'Protfolio', route:'protfolio'},
         {title:'Project', route:'project'},
+        {title:'Gallery', route:'gallery'},
         {title:'Service', route:'service'},
         {title:'Contact', route:'contact'},
       ]
