@@ -10,6 +10,8 @@
         <Aboutus />
         <!-- Protfolio -->
         <Protfolio />
+        <!-- Project  -->
+        <Project />
     </v-main>
   </v-app>
 </template>
@@ -19,6 +21,7 @@ import Aboutus from './components/Aboutus.vue';
 // import HelloWorld from './components/HelloWorld';
 import Header from './components/Header.vue';
 import HeroComponent from './components/HeroComponent.vue';
+import Project from './components/Project.vue';
 import Protfolio from './components/Protfolio.vue';
 export default {
   name: 'App',
@@ -26,7 +29,8 @@ export default {
     Header,
     HeroComponent,
     Aboutus,
-    Protfolio
+    Protfolio,
+    Project
   },
   data() {
     return {
