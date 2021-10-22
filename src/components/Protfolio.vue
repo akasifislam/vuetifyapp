@@ -12,9 +12,9 @@
                   <v-chip @click="activeProtfolio='desktopapp'" :color="activeProtfolio === 'desktopapp' ? 'success':'' " class="mx-2">Desktop App</v-chip>
               </div>
           </v-col>
+        <slot v-if="activeProtfolio==='webapp'">
           <v-col lg="3" v-for="(web,webindex) in webApps" :key="webindex">
             
-            <slot>
                 <v-card>
                     <v-img
                     :src="web.image"
@@ -27,8 +27,42 @@
                     </v-img>
                     <p class="mx-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus fugiat, placeat tempore eveniet ea exercitationem earum assumenda amet non iste sequi tempora sunt quidem reprehenderit doloribus qui, in perferendis ratione!</p>
                 </v-card>
-            </slot>
           </v-col>
+        </slot>
+        <slot v-if="activeProtfolio==='mobileapp'">
+          <v-col lg="3" v-for="(mobile,mobileindex) in mobileApps" :key="mobileindex">
+            
+                <v-card>
+                    <v-img
+                    :src="mobile.image"
+                    width="100%"
+                    class="white--text align-end"
+                    gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                    height="200px"
+                    >
+                    <v-card-title> {{ mobile.title }} </v-card-title>
+                    </v-img>
+                    <p class="mx-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus fugiat, placeat tempore eveniet ea exercitationem earum assumenda amet non iste sequi tempora sunt quidem reprehenderit doloribus qui, in perferendis ratione!</p>
+                </v-card>
+          </v-col>
+        </slot>
+        <slot v-if="activeProtfolio==='desktopapp'">
+          <v-col lg="3" v-for="(desktop,desktopindex) in desktopApps" :key="desktopindex">
+            
+                <v-card>
+                    <v-img
+                    :src="desktop.image"
+                    width="100%"
+                    class="white--text align-end"
+                    gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                    height="200px"
+                    >
+                    <v-card-title> {{ desktop.title }} </v-card-title>
+                    </v-img>
+                    <p class="mx-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus fugiat, placeat tempore eveniet ea exercitationem earum assumenda amet non iste sequi tempora sunt quidem reprehenderit doloribus qui, in perferendis ratione!</p>
+                </v-card>
+          </v-col>
+        </slot>
       </v-row>
   </v-container>
 </template>
@@ -41,6 +75,21 @@ export default {
             webApps:[
                 { title:'Web Application',image:'https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png' },
                 { title:'Mobile Application',image:'https://www.lavamobiles.com/images/card-smartphones.jpg' },
+                { title:'Desktop Application',image:'https://www.buyup.com.bd/wp-content/uploads/2021/02/01-14.jpg' },
+                { title:'Desktop Application',image:'https://www.buyup.com.bd/wp-content/uploads/2021/02/01-14.jpg' }
+            ],
+            mobileApps:[
+                { title:'Web Application',image:'https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png' },
+                { title:'Mobile Application',image:'https://www.lavamobiles.com/images/card-smartphones.jpg' },
+                { title:'Desktop Application',image:'https://www.buyup.com.bd/wp-content/uploads/2021/02/01-14.jpg' },
+            ],
+            desktopApps:[
+                { title:'Web Application',image:'https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png' },
+                { title:'Mobile Application',image:'https://www.lavamobiles.com/images/card-smartphones.jpg' },
+                { title:'Desktop Application',image:'https://www.buyup.com.bd/wp-content/uploads/2021/02/01-14.jpg' },
+                { title:'Desktop Application',image:'https://www.buyup.com.bd/wp-content/uploads/2021/02/01-14.jpg' },
+                { title:'Desktop Application',image:'https://www.buyup.com.bd/wp-content/uploads/2021/02/01-14.jpg' },
+                { title:'Desktop Application',image:'https://www.buyup.com.bd/wp-content/uploads/2021/02/01-14.jpg' },
                 { title:'Desktop Application',image:'https://www.buyup.com.bd/wp-content/uploads/2021/02/01-14.jpg' },
                 { title:'Desktop Application',image:'https://www.buyup.com.bd/wp-content/uploads/2021/02/01-14.jpg' }
             ]
