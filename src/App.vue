@@ -22,8 +22,10 @@
         <!-- contactus  -->
         <Contactus />
 
+        <!-- footerrrrrrrrrrr  -->
+        <Footer />
 
-        
+
     </v-main>
   </v-app>
 </template>
@@ -31,8 +33,8 @@
 <script>
 import Aboutus from './components/Aboutus.vue';
 import Contactus from './components/Contactus.vue';
+import Footer from './components/Footer.vue';
 import Gallery from './components/Gallery.vue';
-// import HelloWorld from './components/HelloWorld';
 import Header from './components/Header.vue';
 import HeroComponent from './components/HeroComponent.vue';
 import Project from './components/Project.vue';
@@ -46,7 +48,8 @@ export default {
     Protfolio,
     Project,
     Gallery,
-    Contactus
+    Contactus,
+    Footer
   },
   data() {
     return {
